@@ -1,0 +1,32 @@
+<div style="">
+  <div class="dio1">
+    <button
+      nbButton
+      outline
+      status="danger"
+      (click)="newGame()"
+      style="
+        margin-top: 4%;
+
+        margin-right: 6%;
+      "
+    >
+      start new tris match
+    </button>
+  </div>
+  <div class="dio1">
+    <h3 *ngIf="inizio">current player:{{ player }}</h3>
+    <h3 *ngIf="winner" id="demo">the winner is {{ winner }}</h3>
+  </div>
+
+  <div class="dio1">
+    <main class="dio">
+      <app-square
+        *ngFor="let val of squares; let i = index"
+        [value]="val"
+        (click)="makeMove(i)"
+        style="height: 100%;"
+      ></app-square>
+    </main>
+  </div>
+</div>

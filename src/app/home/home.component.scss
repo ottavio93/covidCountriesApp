@@ -1,0 +1,24 @@
+$primary: rgb(67, 0, 111);
+span {
+  font-weight: bold;
+  padding: 0.3em 0.8em;
+  background: green($color: #20c72e);
+  cursor: pointer;
+  user-select: none;
+  border: 3px solid coral;
+}
+.play_container {
+  border: 1px solid salmon;
+  padding: 3em;
+  margin-bottom: 1em;
+  input {
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+}
+.active {
+  background-color: rgb(67, 0, 111);
+}
+.noactive {
+  background-color: lightgrey;
+}
