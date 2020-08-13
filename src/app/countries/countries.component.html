@@ -1,2 +1,4 @@
-<p>countries works!</p>
-<!-- <div [ngClass]="theme | async" class="app"></div> -->
+<div [ngClass]="theme | async" class="app">
+  <BUTTon (click)="toggleTheme()">switch</BUTTon>
+  <router-outlet></router-outlet>
+</div>

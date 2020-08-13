@@ -8,16 +8,17 @@ export enum Theme {
   providedIn: 'root',
 })
 export class ThemeService {
-  private node: BehaviorSubject<Theme> = new BehaviorSubject(Theme.dark);
-  mode$: any;
+  private mode: BehaviorSubject<Theme> = new BehaviorSubject(Theme.dark);
 
   constructor() {}
-  get Node$() {
-    return this.node.asObservable();
+  get mode$() {
+    return this.mode.asObservable();
   }
   toggleMode() {
-    if (this.node.value === Theme.dark) {
-      this.node.next(Theme.light);
+    if (this.mode.value === Theme.dark) {
+      this.mode.next(Theme.light);
+    } else if (this.mode.value === Theme.light) {
+      this.mode.next(Theme.dark);
     }
   }
 }
