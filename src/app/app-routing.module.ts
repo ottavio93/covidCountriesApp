@@ -6,6 +6,8 @@ import { BoardComponent } from './board/board.component';
 import { SquareComponent } from './square/square.component';
 import { CountriesComponent } from './countries/countries.component';
 import { NavComponent } from './nav/nav.component';
+import { CasaComponent } from './pages/casa/casa.component';
+import { DetailComponent } from './pages/detail/detail.component';
 
 const routes: Routes = [
   { path: 'Home', component: HomeComponent },
@@ -14,6 +16,8 @@ const routes: Routes = [
   { path: 'board', component: BoardComponent },
   { path: 'countries', component: CountriesComponent },
   { path: 'nav', component: NavComponent },
+  { path: 'casa', component: CasaComponent },
+  { path: 'country', component: DetailComponent },
 ];
 
 @NgModule({

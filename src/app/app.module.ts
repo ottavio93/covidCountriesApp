@@ -17,6 +17,10 @@ import { NbThemeModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { CountriesComponent } from './countries/countries.component';
 import { NavComponent } from './nav/nav.component';
+import { DetailComponent } from './pages/detail/detail.component';
+import { CasaComponent } from './pages/casa/casa.component';
+import { CounrtyCardComponent } from './counrty-card/counrty-card.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +31,10 @@ import { NavComponent } from './nav/nav.component';
     MatchingGameComponent,
     CountriesComponent,
     NavComponent,
+    DetailComponent,
+    CasaComponent,
+    CounrtyCardComponent,
+    DropdownComponent,
   ],
   imports: [
     BrowserModule,
