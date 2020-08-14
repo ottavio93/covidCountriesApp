@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService, Theme } from '../service/theme.service';
 import { Observable } from 'rxjs';
-import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-countries',
-  templateUrl: './countries.component.html',
-  styleUrls: ['./countries.component.scss'],
+  selector: 'app-nav',
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.component.scss'],
 })
-export class CountriesComponent implements OnInit {
+export class NavComponent implements OnInit {
   constructor(private themeService: ThemeService) {}
   theme: Observable<Theme>;
   ngOnInit(): void {
     this.theme = this.themeService.mode$;
+  }
+  toggleTheme() {
+    this.themeService.toggleMode();
   }
 }

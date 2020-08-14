@@ -20,11 +20,7 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-header {
-  background-color: $primary;
-  padding: 1em;
-  height: 3em;
-}
+
 a {
   color: white;
 }
@@ -45,10 +41,16 @@ li a {
 
 :root {
   --white: hsl (0, 0%, 0%);
-  --d-bg: hsl(207, 26%, 17%);
+  --d-element: var(--dark);
+  --d-bg: hsl(357, 82%, 40%);
   --d-text: var(--white);
   --l-text: hsl>(200, 15%, 8%);
   --l-input: hsl(0, 0%, 50%);
-  --l-bg: hsl(0, 0%, 98%);
+  --l-bg: hsl(44, 71%, 20%);
   --l-element: var(--white);
+  --l-text: var(--dark);
+}
+* {
+  margin: 0px;
+  padding: 0px;
 }

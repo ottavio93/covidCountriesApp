@@ -12,6 +12,8 @@ export class BoardComponent implements OnInit {
   inizio: boolean = false;
   xIsNext: boolean;
   ver: boolean = false;
+  xwin: number = 0;
+  owin: number = 0;
   constructor() {}
 
   ngOnInit(): void {}
@@ -36,14 +38,25 @@ export class BoardComponent implements OnInit {
     }
 
     this.winner = this.calculateWinner1();
-    if (this.winner != null) {
+    if (this.winner != null && this.winner == 'X') {
+      this.xwin += 1;
+      console.log(this.xwin + 'fdfdfdf');
       this.opensweetalertcst();
+
+      this.newGame();
+    }
+    if (this.winner != null && this.winner == 'O') {
+      this.owin += 1;
+      console.log(this.owin + 'ciao');
+      this.opensweetalertcst();
+
       this.newGame();
     }
     if (!this.squares.includes(null)) {
       this.opensweetalertcst1();
     }
   }
+
   function() {
     for (var i = 0; i < this.squares.length; ++i)
       if (!(i in this.squares)) {

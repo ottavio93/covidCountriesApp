@@ -16,6 +16,7 @@ import { MatchingGameComponent } from './matching-game/matching-game.component';
 import { NbThemeModule, NbLayoutModule, NbButtonModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { CountriesComponent } from './countries/countries.component';
+import { NavComponent } from './nav/nav.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { CountriesComponent } from './countries/countries.component';
     BoardComponent,
     MatchingGameComponent,
     CountriesComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,

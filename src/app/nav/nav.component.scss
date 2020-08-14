@@ -1,0 +1,24 @@
+nav {
+  float: right;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em, 3em;
+}
+.logo {
+  margin-left: 4%;
+  width: 4em;
+  float: left;
+}
+
+.zio.ligth {
+  background-color: rgb(99, 51, 153);
+}
+.zio.dark {
+  background-color: rgb(20, 18, 18);
+}
+header {
+  padding: 1em;
+  height: 4em;
+}

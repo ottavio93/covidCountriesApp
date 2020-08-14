@@ -15,8 +15,10 @@
     </button>
   </div>
   <div class="dio1">
-    <h3 *ngIf="inizio">current player:{{ player }}</h3>
-    <h3 *ngIf="winner" id="demo">the winner is {{ winner }}</h3>
+    <h3 style="padding-right: 4em;" *ngIf="inizio">player:{{ player }}</h3>
+    <DIv>
+      <h4 *ngIf="inizio">score O:{{ owin }} X:{{ xwin }}</h4>
+    </DIv>
   </div>
 
   <div class="dio1">
